@@ -1,0 +1,74 @@
+
+body {
+	@include font;
+	font-size: 100%;
+	line-height: 1.5em;
+	color: darken( $grey, 10% );
+	background-color: #eee;
+	
+	@include respond-to( 1024px ) {
+		font-size: 100%;
+	}
+}
+
+a {
+	color: $teal;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover {
+		color: lighten( $teal, 10% );
+	}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include font-bold;
+	line-height: 1.2em;
+	padding: 10px 0 0 0;
+
+	em {
+		@include font-bold-italic;
+	}
+}
+
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+	line-height: 1.2em;
+
+	&.caps {
+		text-transform: uppercase;
+		padding-top: 50px;
+	}
+
+}
+
+h4 {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	@include font;
+}
+
+strong {
+	@include font-bold;
+}
+
+em {
+	@include font-italic;
+}
+
+strong em, em strong {
+	@include font-bold-italic;
+}

@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+
+// sans-serif mixin
+@mixin font-title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+}
+
+// sans-serif mixin
+@mixin font {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+}
+
+// bold italic
+@mixin font-italic {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+// bold face
+@mixin font-bold {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+}
+
+// bold italic
+@mixin font-bold-italic {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
